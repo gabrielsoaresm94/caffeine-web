@@ -16,6 +16,7 @@ import {
   InfoData,
   InfoDataColapsable,
   InfoDataColapsableContent,
+  InfoDataColapsableContentColumn,
   InfoDataColapsableHeader,
   InfoHeader,
   InfoHeaderIcon,
@@ -59,6 +60,7 @@ const Dashboard = () => {
   const showIcons = responsive?.middle ?? true;
 
   const [isOpen, setIsOpen] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(true);
 
   return (
     <Container>
@@ -143,10 +145,37 @@ const Dashboard = () => {
                   <p style={{ marginRight: 50, cursor: "pointer" }}>ÍCONE</p>
                 </InfoDataColapsableHeader>
                 {isOpen && (
-                  <InfoDataColapsableContent>oii</InfoDataColapsableContent>
+                  <InfoDataColapsableContent>
+                    <InfoDataColapsableContentColumn>
+                      <p>Nome: Carlos Almeida</p>
+                      <p>E-mail: carlos.almeida@caffeine.com.br</p>
+                    </InfoDataColapsableContentColumn>
+                    <InfoDataColapsableContentColumn>
+                      <p>Telefone 1: (21) 982589324</p>
+                      <p>Telefone 2:</p>
+                    </InfoDataColapsableContentColumn>
+                  </InfoDataColapsableContent>
                 )}
               </InfoDataColapsable>
-              <InfoDataColapsable></InfoDataColapsable>
+              <InfoDataColapsable>
+                <InfoDataColapsableHeader onClick={() => setIsOpen2(!isOpen2)}>
+                  <p style={{ marginLeft: 50 }}>DADOS DA LOJA</p>
+                  <p style={{ marginRight: 50, cursor: "pointer" }}>ÍCONE</p>
+                </InfoDataColapsableHeader>
+                {isOpen2 && (
+                  <InfoDataColapsableContent>
+                    <InfoDataColapsableContentColumn>
+                      <p>CNPJ: 04.646.343/0001-89</p>
+                      <p>Nome Fantasia: Loja de suplementos</p>
+                      <p>Razão Social: LOJA DE SUPLEMENTOS LTDA.</p>
+                    </InfoDataColapsableContentColumn>
+                    <InfoDataColapsableContentColumn>
+                      <p>E-mail: roberto.baptista@caffeine.com.br</p>
+                      <p>Telefone: (21) 981589321</p>
+                    </InfoDataColapsableContentColumn>
+                  </InfoDataColapsableContent>
+                )}
+              </InfoDataColapsable>
             </InfoData>
           </Info>
         </ContentInfo>

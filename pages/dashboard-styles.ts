@@ -1,4 +1,3 @@
-// import styled from "styled-components";
 import styled from "@emotion/styled";
 
 export const Header = styled.div`
@@ -160,7 +159,7 @@ export const InfoText = styled.div`
 export const InfoData = styled.div``;
 
 export const InfoDataColapsable = styled.div`
-  background: #fff;
+  margin: 0 0 50px 0;
   border-radius: 16px 16px 0 0;
 `;
 
@@ -171,8 +170,23 @@ export const InfoDataColapsableHeader = styled.div`
   border-radius: 16px 16px 0 0;
   border: 2px solid;
   border-color: #e2e2e2;
+  background: #fff;
+  box-shadow: 0 5px 0 0 #e2e2e2;
 `;
 
 export const InfoDataColapsableContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px 0 40px 0;
+  border-radius: 0 0 16px 16px;
+  border: 2px solid;
+  border-color: #e2e2e2;
+  background: #fbfbfb;
+  /* background-color: ; */
+`;
 
+export const InfoDataColapsableContentColumn = styled.div`
+  min-width: 300px;
+  /* background-color: red; */
 `;
