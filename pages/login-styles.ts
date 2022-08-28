@@ -23,7 +23,10 @@ export const Container = styled.div`
 
 export const Background = styled.div`
   background-color: pink;
-  max-width: 862px;
+  @media (min-width: 1120px) {
+    max-width: 862px;
+  }
+
   @media (max-width: 1120px) {
     width: 100%;
     display: flex;
@@ -35,7 +38,10 @@ export const Background = styled.div`
 export const BackgroundImage = styled.img`
   height: 100vh;
   @media (max-width: 1120px) {
+    width: 100%;
     height: 30vh;
+    object-fit: cover;
+    object-position: center;
   }
 `;
 
