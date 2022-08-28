@@ -89,7 +89,6 @@ export const SearchInputContent = styled.div`
   overflow: hidden;
   margin-right: 14px;
   background-color: green;
-
 `;
 
 export const SearchIcon = styled.div`
@@ -123,4 +122,57 @@ export const SearchButton = styled.button`
   cursor: pointer;
 `;
 
-export const Information = styled.div``;
+export const Info = styled.div`
+  margin-top: 26px;
+`;
+
+export const InfoHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+`;
+
+export const InfoHeaderIcon = styled.div`
+  border-radius: 100%;
+  background: #edecf5;
+  width: 78px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const InfoHeaderTitle = styled.div`
+  margin: 10px 20px;
+`;
+
+export const InfoTextContent = styled.div``;
+
+export const InfoText = styled.div`
+  text-align: left;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid;
+  border-color: #e2e2e2;
+`;
+
+export const InfoData = styled.div``;
+
+export const InfoDataColapsable = styled.div`
+  background: #fff;
+  border-radius: 16px 16px 0 0;
+`;
+
+export const InfoDataColapsableHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 16px 16px 0 0;
+  border: 2px solid;
+  border-color: #e2e2e2;
+`;
+
+export const InfoDataColapsableContent = styled.div`
+
+`;
