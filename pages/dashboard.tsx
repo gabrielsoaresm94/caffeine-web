@@ -126,7 +126,7 @@ const Dashboard = () => {
               </InfoHeaderTitle>
             </InfoHeader>
             <InfoTextContent>
-              <p style={{ textAlign: "center" }}>INFORMAÇÕES ADICIONAIS</p>
+              <p style={{ textAlign: "center", fontWeight: "bold" }}>INFORMAÇÕES ADICIONAIS</p>
               <InfoText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -138,7 +138,7 @@ const Dashboard = () => {
               </InfoText>
             </InfoTextContent>
             <InfoData>
-              <p style={{ textAlign: "center" }}>DADOS CADASTRAIS</p>
+              <p style={{ textAlign: "center", fontWeight: "bold" }}>DADOS CADASTRAIS</p>
               <InfoDataColapsable>
                 <InfoDataColapsableHeader onClick={() => setIsOpen(!isOpen)}>
                   <p style={{ marginLeft: 50 }}>LOJISTA</p>

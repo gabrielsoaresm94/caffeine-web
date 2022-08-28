@@ -143,6 +143,7 @@ export const InfoHeaderIcon = styled.div`
 
 export const InfoHeaderTitle = styled.div`
   margin: 10px 20px;
+  font-weight: bold;
 `;
 
 export const InfoTextContent = styled.div``;
