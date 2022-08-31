@@ -70,7 +70,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Form = styled.div``;
+export const Form = styled.form``;
 
 export const Footer = styled.div`
   text-align: center;
@@ -79,7 +79,6 @@ export const Footer = styled.div`
   color: #bfbfbf;
   opacity: 1;
   font-size: 10px;
-  background-color: yellow;
   margin-top: 20vh;
 
   @media (max-width: 1120px) {
