@@ -5,8 +5,8 @@ import Login from "./login";
 const Home: NextPage = () => {
   return (
     <>
-      {/* <Login></Login> */}
-      <Dashboard></Dashboard>
+      <Login></Login>
+      {/* <Dashboard></Dashboard> */}
     </>
   );
 };

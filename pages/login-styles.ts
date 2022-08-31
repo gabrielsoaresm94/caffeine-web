@@ -47,7 +47,6 @@ export const BackgroundImage = styled.img`
 export const Content = styled.div`
   max-width: 408px;
   margin: 8% 14%;
-  background-color: red;
 
   @media (max-width: 1500px) {
     margin: 8% 8%;
@@ -61,9 +60,6 @@ export const Content = styled.div`
     margin: 8% 4%;
   }
 
-  /**
-  * TODO - ficar atento nessa parte
-  */
   @media (max-width: 1120px) {
     margin-bottom: 60%;
     width: 408px;
@@ -109,7 +105,6 @@ export const DescriptionInput = styled.p`
 
 export const ContentLogo = styled.div`
   max-width: 408px;
-  background-color: green;
   display: flex;
   align-items: center;
   justify-content: center;
