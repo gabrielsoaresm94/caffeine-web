@@ -10,6 +10,8 @@ import {
   HeaderButtonParagraphLojas,
   HeaderButtonParagraphSair,
   HeaderContentButtons,
+  HeaderContentIcon,
+  HeaderContentIcons,
   HeaderContentLogo,
   HeaderLogo,
   Info,
@@ -91,7 +93,22 @@ const Dashboard = () => {
             </HeaderButton>
           </HeaderContentButtons>
         ) : (
-          <p>Icons</p>
+          <HeaderContentIcons>
+            <HeaderContentIcon>
+              <img
+                src="/assets/icone_lojas@2x.png"
+                alt="Botão para Lojas"
+                style={IconStyle}
+              ></img>
+            </HeaderContentIcon>
+            <HeaderContentIcon>
+              <img
+                src="/assets/icone_sair@2x.png"
+                alt="Botão para sair"
+                style={IconStyle}
+              ></img>
+            </HeaderContentIcon>
+          </HeaderContentIcons>
         )}
       </Header>
       <Content>
@@ -107,7 +124,21 @@ const Dashboard = () => {
               </SearchIcon>
               <SearchInput></SearchInput>
             </SearchInputContent>
-            <SearchButton>Buscar Loja</SearchButton>
+            <SearchButton>
+              {showIcons ? (
+                "Buscar Loja"
+              ) : (
+
+                  <img
+                    src="/assets/icone_seta_branca@2x.png"
+                    alt="Ícone de Informação"
+                    style={{
+                      width: 24,
+                      height: 24,
+                    }}
+                  ></img>
+              )}
+            </SearchButton>
           </Search>
           <Info>
             <InfoHeader>
@@ -126,7 +157,9 @@ const Dashboard = () => {
               </InfoHeaderTitle>
             </InfoHeader>
             <InfoTextContent>
-              <p style={{ textAlign: "center", fontWeight: "bold" }}>INFORMAÇÕES ADICIONAIS</p>
+              <p style={{ textAlign: "center", fontWeight: "bold" }}>
+                INFORMAÇÕES ADICIONAIS
+              </p>
               <InfoText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -138,7 +171,9 @@ const Dashboard = () => {
               </InfoText>
             </InfoTextContent>
             <InfoData>
-              <p style={{ textAlign: "center", fontWeight: "bold" }}>DADOS CADASTRAIS</p>
+              <p style={{ textAlign: "center", fontWeight: "bold" }}>
+                DADOS CADASTRAIS
+              </p>
               <InfoDataColapsable>
                 <InfoDataColapsableHeader onClick={() => setIsOpen(!isOpen)}>
                   <p style={{ marginLeft: 50 }}>LOJISTA</p>

@@ -16,16 +16,20 @@ export const HeaderContentLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  @media (max-width: 750px) {
+    margin: 10px 10px;
+  }
 `;
 
 export const HeaderLogo = styled.img`
   width: 100%;
   bottom: 100%;
+  @media (max-width: 750px) {
+    width: 75%;
+  }
 `;
 
 export const HeaderContentButtons = styled.div`
-  background-color: yellow;
 `;
 
 export const HeaderButton = styled.button`
@@ -65,7 +69,9 @@ export const Content = styled.div`
 export const ContentInfo = styled.div`
   width: 744px;
   height: 80vh;
-  /* background-color: green; */
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 `;
 
 export const Search = styled.div`
@@ -75,7 +81,9 @@ export const Search = styled.div`
   height: 100px;
   border-bottom: 2px solid;
   border-color: #e2e2e2;
-  background-color: pink;
+  @media (max-width: 750px) {
+    margin: 0 10px;
+  }
 `;
 
 export const SearchInputContent = styled.div`
@@ -87,7 +95,6 @@ export const SearchInputContent = styled.div`
   height: 48px;
   overflow: hidden;
   margin-right: 14px;
-  background-color: green;
 `;
 
 export const SearchIcon = styled.div`
@@ -119,6 +126,13 @@ export const SearchButton = styled.button`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  @media (max-width: 750px) {
+    width: 48px;
+    background: #bfbfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Info = styled.div`
@@ -129,6 +143,11 @@ export const InfoHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: start;
+  @media (max-width: 750px) {
+    background: #fff;
+    height: 80px;
+    align-items: center;
+  }
 `;
 
 export const InfoHeaderIcon = styled.div`
@@ -139,6 +158,10 @@ export const InfoHeaderIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 750px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const InfoHeaderTitle = styled.div`
@@ -184,10 +207,25 @@ export const InfoDataColapsableContent = styled.div`
   border: 2px solid;
   border-color: #e2e2e2;
   background: #fbfbfb;
-  /* background-color: ; */
+  @media (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const InfoDataColapsableContentColumn = styled.div`
   min-width: 300px;
-  /* background-color: red; */
+`;
+
+export const HeaderContentIcons = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const HeaderContentIcon = styled.div`
+  margin: 0 10px;
+  cursor: pointer;
 `;
